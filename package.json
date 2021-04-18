@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "lighthouserc-ci.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
     "start": "http-server src"
   },
