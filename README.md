@@ -1,7 +1,8 @@
 ### Install the Lighthouse CI CLI
 
 ```bash
-npm install -g @lhci/cli
+sudo npm install -g @lhci/cli
+lhci --version
 ```
 
 ### Create file
