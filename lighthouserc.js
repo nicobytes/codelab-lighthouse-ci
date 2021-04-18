@@ -1,13 +1,14 @@
 module.exports = {
   ci: {
     collect: {
+      startServerCommand: 'npm run start',
       numberOfRuns: 1,
-      chromePath: "/usr/bin/google-chrome",
       url: [
-        "http://localhost:8080",
-        "http://localhost:8080/about",
-        "http://localhost:8080/service",
+        'http://localhost:8080',
+        'http://localhost:8080/about',
+        'http://localhost:8080/service',
       ],
+      chromePath: '/usr/bin/google-chrome',
     },
     upload: {
       target: "temporary-public-storage",

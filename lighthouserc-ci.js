@@ -1,12 +1,14 @@
 module.exports = {
   ci: {
     collect: {
+      startServerCommand: 'npm run start',
       numberOfRuns: 3,
       url: [
-        "http://localhost:8080",
-        "http://localhost:8080/about",
-        "http://localhost:8080/service",
+        'http://localhost:8080',
+        'http://localhost:8080/about',
+        'http://localhost:8080/service',
       ],
+      // chromePath: '/usr/bin/google-chrome',
     },
     assert: {
       preset: 'lighthouse:no-pwa',
