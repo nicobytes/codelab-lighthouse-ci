@@ -4,12 +4,12 @@ module.exports = {
       startServerCommand: 'npm run start',
       numberOfRuns: 3,
       url: [
-        'http://127.0.0.1:8080/',
-        'http://127.0.0.1:8080/about',
-        'http://127.0.0.1:8080/service'
+        'http://localhost:8080',
+        'http://localhost:8080/about',
+        'http://localhost:8080/service',
       ],
     },
-    assert: {
+    asserts: {
       assertions: {
         'categories:performance': ['error', {minScore: .6}],
         'categories:accessibility': ['error', {minScore: .6}],
@@ -20,6 +20,6 @@ module.exports = {
     },
     upload: {
       target: "temporary-public-storage",
-    }
-  }
-}
+    },
+  },
+};
