@@ -11,10 +11,10 @@ module.exports = {
     },
     asserts: {
       assertions: {
-        'categories:performance': ['error', {minScore: .8}],
-        'categories:accessibility': ['error', {minScore: .8}],
-        'categories:best-practices': ['error', {minScore: .8}],
-        'categories:seo': ['error', {minScore: .8}],
+        'categories:performance': ['error', {minScore: .9}],
+        'categories:accessibility': ['error', {minScore: .9}],
+        'categories:best-practices': ['error', {minScore: .9}],
+        'categories:seo': ['error', {minScore: .9}],
 				'categories.pwa': 'off',
       }
     },
