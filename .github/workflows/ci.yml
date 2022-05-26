@@ -1,0 +1,21 @@
+name: Lighthouse CI
+on: [push]
+jobs:
+  lhci:
+    name: Lighthouse CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone
+        uses: actions/checkout@v3
+      - name: Setup NodeJs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - name: Install deps
+        run: npm install
+      - name: Install the Lighthouse CI CLI.
+        run: npm install -g @lhci/cli
+      - name: Run 
+        run: lhci autorun
+
+    
